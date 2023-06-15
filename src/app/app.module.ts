@@ -18,6 +18,7 @@ import {CheckboxModule} from 'primeng/checkbox';
 import { RadioButtonModule } from 'primeng/radiobutton';
 import {CardModule} from 'primeng/card';
 import { FormsModule } from '@angular/forms';
+import {TableModule} from 'primeng/table';
 
 
 @NgModule({
@@ -40,7 +41,8 @@ import { FormsModule } from '@angular/forms';
     CheckboxModule,
     RadioButtonModule,
     CardModule,
-    FormsModule
+    FormsModule,
+    TableModule
   ],
   providers: [ApiService],
   bootstrap: [AppComponent]

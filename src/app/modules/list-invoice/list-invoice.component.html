@@ -1,4 +1,18 @@
-<p>list-invoice works!</p>
-b
-<p *ngFor="let client of clients"> {{client.name}} a</p>
-c
+<p-table [value]="clients">
+  <ng-template pTemplate="header">
+      <tr>
+          <th>Documento</th>
+          <th>Nombre</th>
+          <th>Email</th>
+          <th>Dirección</th>
+      </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-client>
+      <tr>
+          <td>{{client.client_id}}</td>
+          <td>{{client.name}}</td>
+          <td>{{client.email}}</td>
+          <td>{{client.address}}</td>
+      </tr>
+  </ng-template>
+</p-table>

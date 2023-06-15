@@ -3,8 +3,8 @@
     <div class="grid p-fluid" style="margin-top: 10px;">
       <div class="col-12 md:col-6">
         <span class="p-float-label">
-          <input id="clients_id" name="clients_id" type="text" pInputText ngModel #clients_id="ngModel">
-          <label for="clients_id"> Identificador (CIF, NIE, DNI) </label>
+          <input id="client_id" name="clients_id" type="text" pInputText ngModel #client_id="ngModel">
+          <label for="client_id"> Identificador (CIF, NIE, DNI) </label>
         </span>
       </div>
       <div class="col-12 md:col-6">
@@ -29,10 +29,10 @@
         <button pButton type="button" label="Cancelar" class="p-button-danger" style="width:75%;"></button>
       </div>
       <div class="col-12 md:col-4" style="text-align: center;">
-        <button pButton type="button" label="Borrar" class="p-button-warning" style="width:75%"></button>
+        <button pButton type="button" label="Borrar" class="p-button-warning" style="width:75%" (click)="resetForm()"></button>
       </div>
       <div class="col-12 md:col-4" style="text-align: center;">
-        <button pButton type="button" label="Guardar" style="width:75%"></button>
+        <button pButton type="button" label="Guardar" style="width:75%" (click)="acceptHandler()"></button>
       </div>
     </div>
   </form>
